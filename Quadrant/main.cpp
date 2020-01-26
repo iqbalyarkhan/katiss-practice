@@ -1,15 +1,29 @@
-//
-//  main.cpp
-//  Quadrant
-//
-//  Created by Iqbal Khan on 1/25/20.
-//  Copyright © 2020 Iqbal Khan. All rights reserved.
-//
+/**
+ https://open.kattis.com/problems/quadrant
+ */
 
 #include <iostream>
+#include <stdio.h>
+#include <string>
+#include <sstream>
+#include <vector>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int a = 0;
+    int b = 0;
+    cin >> a >> b;
+    
+    if (a > 0 && b > 0){
+        cout << 1 << endl;
+    } else if (a < 0 && b < 0){
+        cout << 3 << endl;
+    } else if (a < 0 && b > 0){
+        cout << 2 << endl;
+    } else {
+        cout << 4 << endl;
+    }
+    
     return 0;
 }
